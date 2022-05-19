@@ -1,5 +1,5 @@
 # umi-plugin-panel-tabs
-
+[![NPM version](https://img.shields.io/npm/v/umi-plugin-multi-panels.svg?style=flat)](https://npmjs.org/package/umi-plugin-multi-panels) [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-multi-panels.svg?style=flat)](https://npmjs.org/package/umi-plugin-multi-panels) 
 
 ## 本插件基于umi-plugin-panel-tab[https://github.com/fangzhengjin/umi-plugin-panel-tabs]
 ##  感谢作者fangzhengjin
