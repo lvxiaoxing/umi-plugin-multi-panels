@@ -1,5 +1,5 @@
 {
-  "name": "umi-plugin-multi-tabs",
+  "name": "umi-plugin-multi-panels",
   "main": "lib/index.js",
   "author": "lvxiaoxing",
   "repository": "https://github.com/lvxiaoxing/umi-plugin-multi-tabs",
