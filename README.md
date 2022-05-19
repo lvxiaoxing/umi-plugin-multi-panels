@@ -3,7 +3,8 @@
 [![NPM version](https://img.shields.io/npm/v/umi-plugin-panel-tabs.svg?style=flat)](https://npmjs.org/package/umi-plugin-panel-tabs) [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-panel-tabs.svg?style=flat)](https://npmjs.org/package/umi-plugin-panel-tabs) [![Netlify Status](https://api.netlify.com/api/v1/badges/10453ec4-945e-41c7-844e-4e7e6a2027b2/deploy-status)](https://app.netlify.com/sites/vibrant-leakey-d5b34a/deploys)
 
 ## 演示地址 [https://vibrant-leakey-d5b34a.netlify.app]
-## 本插件基于umi-plugin-panel-tab[https://github.com/fangzhengjin/umi-plugin-panel-tabs],感谢作者fangzhengjin
+## 本插件基于umi-plugin-panel-tab[https://github.com/fangzhengjin/umi-plugin-panel-tabs]
+##  感谢作者fangzhengjin
 
 ![image](https://user-images.githubusercontent.com/12680972/147438313-e73a3148-1bc0-438a-9e6f-28d1bad8a25a.png)
 
