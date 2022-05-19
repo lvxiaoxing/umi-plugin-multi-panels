@@ -130,6 +130,7 @@ export default function (api: IApi) {
           'utf-8',
         ),
         {
+          ...api.config.panelTab,
           useI18n: api.userConfig?.locale && api.config.panelTab?.autoI18n,
         },
         {},
