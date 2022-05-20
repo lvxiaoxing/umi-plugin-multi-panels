@@ -38,7 +38,7 @@ const usePanelTab = () => {
         // 前往排除当前 node 后的最后一个 tab
         history.push(
           cachingNodes.filter((cacheNode) => cacheNode.name !== current!!.name).pop()?.location ||
-            {{{ defaultPage }}},
+           '/workbench',
         );
       }
       dropScope(current.name!!);
@@ -67,7 +67,7 @@ const usePanelTab = () => {
    * 关闭所有tab并打开默认页面
    */
   const closeAll = () => {
-    history.push('{{{ defaultPage }}}');
+    history.push('/workbench');
     clear();
   };
 
