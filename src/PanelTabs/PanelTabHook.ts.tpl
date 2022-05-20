@@ -125,7 +125,7 @@ const usePanelTab = () => {
     refresh,
     refreshCurrent,
     closeAll,
-    forceCloseAll
+    forceCloseAll,
     refreshAndCloseCurrent,
     refreshAndCloseCurrentAndSwitch,
   };
