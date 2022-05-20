@@ -60,7 +60,6 @@ export default function (api: IApi) {
         tabsLimitWarnTitle: '提示',
         tabsLimitWarnContent:
           '您当前打开页面过多, 请关闭不使用的页面以减少卡顿!',
-        defaultRoute:'/welcome',
       },
       schema(joi) {
         return joi.object({
@@ -71,7 +70,6 @@ export default function (api: IApi) {
           tabsLimitWait: joi.number(),
           tabsLimitWarnTitle: joi.string(),
           tabsLimitWarnContent: joi.string(),
-          defaultRoute:joi.string(),
         });
       },
       onChange: api.ConfigChangeType.regenerateTmpFiles,
@@ -133,7 +131,6 @@ export default function (api: IApi) {
         ),
         {
           ...api.config.panelTab,
-          defaultRoute:decodeURIComponent(api.config.panelTab.defaultRoute),
           useI18n: api.userConfig?.locale && api.config.panelTab?.autoI18n,
         },
         {},

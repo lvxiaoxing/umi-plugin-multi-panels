@@ -71,6 +71,13 @@ const usePanelTab = () => {
     clear();
   };
 
+    /**
+   * 关闭所有tab但不打开默认页面
+   */
+  const forceCloseAll = () => {
+    clear();
+  };
+
   /**
    * 刷新tab
    * @param node 不指定默认刷新当前tab
@@ -118,6 +125,7 @@ const usePanelTab = () => {
     refresh,
     refreshCurrent,
     closeAll,
+    forceCloseAll
     refreshAndCloseCurrent,
     refreshAndCloseCurrentAndSwitch,
   };
