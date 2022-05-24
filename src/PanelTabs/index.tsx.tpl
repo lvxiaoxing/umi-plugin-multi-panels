@@ -9,7 +9,12 @@ import { RouteContext } from '@ant-design/pro-layout';
 
 const PanelTabs: FC = () => {
   const { getCachingNodes } = useAliveController();
-  const cachingNodes = getCachingNodes();
+    const cachingNodes = getCachingNodes()?.reduce((nodes,item)=>{
+    if(nodes&&nodes.some(node=>node?.location?.pathname===item?.location?.pathname&&node?.location?.search===item?.location?.search)){
+      return [...nodes]
+    }
+      return [...nodes,item]
+  },[]);
   const routeContext = useContext(RouteContext);
   const scrollContainer = useRef<HTMLDivElement>();
 

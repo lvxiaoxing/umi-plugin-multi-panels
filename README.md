@@ -41,7 +41,6 @@ export default defineConfig({
 | tabsLimit | number | 10 | 用户打开多少页签时弹出提示 |
 | tabsLimitWait | number | 500 | 页签数量检查防抖时间, 如果一次弹出了多个提示框, 可以适当延长此时间, 单位毫秒 |
 | tabsLimitWarnTitle | string | 提示 | [配置国际化后此项不生效] 页签数量超限弹窗的标题 |
-| defaultPage | string | '/welcome' | 关闭所有标签后打开的页面路径 |
 | tabsLimitWarnContent | string | 您当前打开页面过多, 请关闭不使用的页面以减少卡顿! | [配置国际化后此项不生效] 页签数量超限弹窗的内容 |
 
 ## 国际化配置项
@@ -115,9 +114,7 @@ export default () => {
 
 ## 常见问题
 
-Q: 有示例代码吗?
 
-A: 演示代码在 [demo 分支](https://github.com/fangzhengjin/umi-plugin-panel-tabs/tree/demo)
 
 Q: 配置后标签栏位置出现了偏移
 
