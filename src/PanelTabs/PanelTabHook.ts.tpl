@@ -44,6 +44,22 @@ const usePanelTab = () => {
       dropScope(current.name!!);
     }
   };
+  /**
+   * 关闭指定页面，并且当前激活页面不受影响
+   */
+  const closeSpecified = (pathname:string) => {
+    if(!pathname) return
+
+    const current = cachingNodes
+      .filter((x) => {
+          // 关闭指定页面
+          return x.location?.pathname === pathname;
+      })
+      ?.pop();
+    if (current) {
+      dropScope(current.name!!);
+    }
+  };
 
   /**
    * 关闭当前tab
@@ -128,6 +144,7 @@ const usePanelTab = () => {
     forceCloseAll,
     refreshAndCloseCurrent,
     refreshAndCloseCurrentAndSwitch,
+    closeSpecified
   };
 };
 
