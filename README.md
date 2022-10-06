@@ -56,7 +56,6 @@ export default defineConfig({
 | panelTab.closeAll | 关闭所有并打开默认页面 |
 | panelTab.forceCloseAll | 关闭所有但不打开默认页面 |
 | panelTab.refresh | 刷新 |
-| panelTab.tabsLimitWarnTitle | 提示 |
 | panelTab.tabsLimitWarnContent | 您当前打开页面过多, 请关闭不使用的页面以减少卡顿! |
 
 ## 额外的配置项

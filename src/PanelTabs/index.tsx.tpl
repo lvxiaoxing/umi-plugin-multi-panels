@@ -17,7 +17,7 @@ const PanelTabs: FC = () => {
   },[]);
   const routeContext = useContext(RouteContext);
   const scrollContainer = useRef<HTMLDivElement>();
-
+  
   return (
     <div
       style={{
@@ -60,6 +60,11 @@ const PanelTabs: FC = () => {
             fontSize: '18px',
           }}
         >
+
+        {{{ ^useI18n }}}
+        <span style={{fontSize:14,color:cachingNodes.length>Number('{{{ tabsLimit }}}')? 'red':'#a6a6a6'}}>{cachingNodes.length}/{'{{{ tabsLimit }}}'}</span>
+        {{{ /useI18n }}}
+     
           <CaretLeftOutlined
             style={{ display: 'inline-block', cursor: 'pointer' }}
             onClick={() =>

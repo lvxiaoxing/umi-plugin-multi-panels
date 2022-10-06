@@ -123,7 +123,6 @@ const PanelTab: React.FC<{ node: CachingNode }> = ({ node }) => {
           close({ name: node.name!!, location: node.location });
         }}
       >
-        {isActive && <Badge color="#FFFFFF" dot />}
         {node.name}
       </Tag>
     </Dropdown>
