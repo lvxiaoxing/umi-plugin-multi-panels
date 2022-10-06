@@ -17,7 +17,7 @@ const PanelTabs: FC = () => {
   },[]);
   const routeContext = useContext(RouteContext);
   const scrollContainer = useRef<HTMLDivElement>();
-  
+
   return (
     <div
       style={{
@@ -28,7 +28,7 @@ const PanelTabs: FC = () => {
         backgroundColor: '#FFFFFF',
         borderTop: '1px solid rgb(216, 220, 229)',
         borderBottom: '1px solid rgb(216, 220, 229)',
-        boxShadow: '0 1px 3px 0 rgb(0 0 0 / 12%), 0 0 3px 0 rgb(0 0 0 / 4%)',
+        borderBottom: '1px solid rgba(0,0,0,0.06)',
       }}
     >
       <style>{`
