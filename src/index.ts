@@ -104,7 +104,7 @@ export default function (api: IApi) {
       content: utils.Mustache.render(
         readFileSync(join(__dirname, 'PanelTabs', 'index.tsx.tpl'), 'utf-8'),
         {
-          // test: console.log(JSON.stringify(api)),
+          ...api.config.panelTab,
           useI18n: api.userConfig?.locale && api.config.panelTab?.autoI18n,
         },
         {},
