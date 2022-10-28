@@ -62,7 +62,7 @@ const PanelTabs: FC = () => {
         >
 
         {{{ ^useI18n }}}
-        <span style={{fontSize:14,color:cachingNodes.length>Number('{{{ tabsLimit }}}')? 'red':'#a6a6a6'}}>{cachingNodes.length}/{'{{{ tabsLimit }}}'}</span>
+        <span style={{fontSize:14,color:cachingNodes.length>Number('{{{ tabsLimit }}}')? 'red':'#a6a6a6',padding:'0 8px'}}>{cachingNodes.length}/{'{{{ tabsLimit }}}'}</span>
         {{{ /useI18n }}}
      
           <CaretLeftOutlined
