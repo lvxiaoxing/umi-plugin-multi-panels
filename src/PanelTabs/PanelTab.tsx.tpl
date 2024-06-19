@@ -106,6 +106,7 @@ const PanelTab: React.FC<{ node: CachingNode }> = ({ node }) => {
       trigger={['contextMenu']}
     >
       <Tag
+        className={isActive ? 'pannel-tab-active pannel-tab' : 'pannel-tab'}
         ref={panelTabRef}
         style={{
           height: '26px',

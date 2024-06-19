@@ -10,9 +10,10 @@
 
 ![image](https://user-images.githubusercontent.com/12680972/147438276-7cf13dad-1145-416b-a441-6d9bc3305431.png)
 
+
 ## 如何使用
 
-安装依赖即可, 以`umi-plugin`开头的插件会被自动加载
+安装依赖即可, 以`umi-plugin`开头的插件会被自动加载，不支持antd V5！！！
 
 ## 配置项
 
@@ -57,6 +58,11 @@ export default defineConfig({
 | panelTab.forceCloseAll | 关闭所有但不打开默认页面 |
 | panelTab.refresh | 刷新 |
 | panelTab.tabsLimitWarnContent | 您当前打开页面过多, 请关闭不使用的页面以减少卡顿! |
+
+## 新增className
+1.标签栏 className:'panelTabsBar'
+2.标签className:'pannel-tab'
+2.当前激活标签className:'pannel-tab-active'
 
 ## 额外的配置项
 
