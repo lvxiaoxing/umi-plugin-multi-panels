@@ -54,7 +54,7 @@ const PanelTabsWrapper: FC<{ route: IRoute; children: React.ReactNode }> = ({
         location={history.location}
         saveScrollPosition="screen"
       >
-        <div style={{ marginTop: 60 }}>{children}</div>
+        <div style={{ marginTop: 60 }} className="panelTabsContent">{children}</div>
       </KeepAlive>
     </>
   );
